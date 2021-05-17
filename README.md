@@ -1,4 +1,36 @@
-# Getting Started with Create React App
+# Lab: Class 02
+
+1. Number and name of feature: Display images
+
+    - Estimate of time needed to complete: 10 minutes
+
+    - Start time: 2:55 pm
+
+    - Finish time: 3:15 pm
+
+    - Actual time needed to complete: 20 minutes
+
+1. Number and name of feature: Allow users to vote for their favorite beast
+
+    - Estimate of time needed to complete: 15 minutes
+
+    - Start time: 3:15 pm
+
+    - Finish time: 3:35 pm
+
+    - Actual time needed to complete: 20 minutes
+
+1. Number and name of feature: Bootstrap
+
+    - Estimate of time needed to complete: 15 minutes
+
+    - Start time: 3:35 pm
+
+    - Finish time: 3:50 pm
+
+    - Actual time needed to complete: 15 minutes
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
