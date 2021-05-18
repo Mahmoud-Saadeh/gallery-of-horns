@@ -2,25 +2,28 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card } from 'react-bootstrap';
 export default class HornedBeasts extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={votes: 0,};
+    this.state = { votes: 0 };
   }
 
-  voteStateHandler = ()=>{
+  voteStateHandler = () => {
     this.setState({
-      votes: this.state.votes + 1
-    })
-  }
+      votes: this.state.votes + 1,
+    });
+  };
 
-  sendDataHandler=(e)=>{
-
-    if (!(e.target.classList.contains('btn'))) {
-    this.props.getDataHandler(this.props.src,this.props.title,this.props.description,this.state.votes);
-    this.props.showHandler();
+  sendDataHandler = (e) => {
+    if (!e.target.classList.contains('btn')) {
+      this.props.getDataHandler(
+        this.props.src,
+        this.props.title,
+        this.props.description,
+        this.state.votes
+      );
+      this.props.showHandler();
     }
-
-  }
+  };
   render() {
     return (
       <div>
@@ -34,17 +37,24 @@ export default class HornedBeasts extends Component {
         <p>{this.props.description}</p>
         <p>❤️ {this.state.votes} {this.state.votes > 1 ? 'Votes' : 'Vote'}</p>
         <button onClick={this.voteStateHandler}>Vote</button> */}
-        <Card onClick={this.sendDataHandler} style={{ width: '18rem', margin:'0px 0px 30px 0px', cursor: 'pointer',}}>
-          <Card.Img variant="top" src={this.props.src}/>
+        <Card
+          onClick={this.sendDataHandler}
+          style={{
+            width: '18rem',
+            margin: '0px 0px 30px 0px',
+            cursor: 'pointer',
+          }}
+        >
+          <Card.Img variant="top" src={this.props.src} />
           <Card.Body>
-            <Card.Title >{this.props.title}</Card.Title>
-            <Card.Text >
-              {this.props.description}
-            </Card.Text>
-            <Card.Text >
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>{this.props.description}</Card.Text>
+            <Card.Text>
               ❤️ {this.state.votes} {this.state.votes > 1 ? 'Votes' : 'Vote'}
             </Card.Text>
-            <Button  onClick={this.voteStateHandler} variant="primary">Vote</Button>
+            <Button onClick={this.voteStateHandler} variant="primary">
+              Vote
+            </Button>
           </Card.Body>
         </Card>
       </div>
