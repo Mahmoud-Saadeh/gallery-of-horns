@@ -1,4 +1,25 @@
-# Lab: Class 02
+# Introduction
+
+this web app is to practice what I am learning in (ASAC) Code Fellows scholarship.
+this web app is created using React.js library that displays some magical beasts in form of cards.
+
+Used libraries:
+1. React.
+1. Bootstrap
+
+## Lab: Class 03
+
+1. Number and name of feature: Display a Modal
+
+    - Estimate of time needed to complete: 1 hour
+
+    - Start time: 1:15 pm
+
+    - Finish time: 2:45 pm
+
+    - Actual time needed to complete: 1 and half hour
+
+## Lab: Class 02
 
 1. Number and name of feature: Display images
 

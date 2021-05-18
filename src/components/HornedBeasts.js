@@ -34,7 +34,7 @@ export default class HornedBeasts extends Component {
         <p>{this.props.description}</p>
         <p>❤️ {this.state.votes} {this.state.votes > 1 ? 'Votes' : 'Vote'}</p>
         <button onClick={this.voteStateHandler}>Vote</button> */}
-        <Card onClick={this.sendDataHandler} style={{ width: '18rem', margin:'0px 0px 30px 0px' }}>
+        <Card onClick={this.sendDataHandler} style={{ width: '18rem', margin:'0px 0px 30px 0px', cursor: 'pointer',}}>
           <Card.Img variant="top" src={this.props.src}/>
           <Card.Body>
             <Card.Title >{this.props.title}</Card.Title>
