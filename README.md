@@ -4,6 +4,7 @@ this web app is to practice what I am learning in (ASAC) Code Fellows scholarshi
 this web app is created using React.js library that displays some magical beasts in form of cards.
 
 Used libraries:
+
 1. React.
 1. Bootstrap
 
@@ -11,45 +12,45 @@ Used libraries:
 
 1. Number and name of feature: Display a Modal
 
-    - Estimate of time needed to complete: 1 hour
+   - Estimate of time needed to complete: 1 hour
 
-    - Start time: 1:15 pm
+   - Start time: 1:15 pm
 
-    - Finish time: 2:45 pm
+   - Finish time: 2:45 pm
 
-    - Actual time needed to complete: 1 and half hour
+   - Actual time needed to complete: 1 and half hour
 
 ## Lab: Class 02
 
 1. Number and name of feature: Display images
 
-    - Estimate of time needed to complete: 10 minutes
+   - Estimate of time needed to complete: 10 minutes
 
-    - Start time: 2:55 pm
+   - Start time: 2:55 pm
 
-    - Finish time: 3:15 pm
+   - Finish time: 3:15 pm
 
-    - Actual time needed to complete: 20 minutes
+   - Actual time needed to complete: 20 minutes
 
 1. Number and name of feature: Allow users to vote for their favorite beast
 
-    - Estimate of time needed to complete: 15 minutes
+   - Estimate of time needed to complete: 15 minutes
 
-    - Start time: 3:15 pm
+   - Start time: 3:15 pm
 
-    - Finish time: 3:35 pm
+   - Finish time: 3:35 pm
 
-    - Actual time needed to complete: 20 minutes
+   - Actual time needed to complete: 20 minutes
 
 1. Number and name of feature: Bootstrap
 
-    - Estimate of time needed to complete: 15 minutes
+   - Estimate of time needed to complete: 15 minutes
 
-    - Start time: 3:35 pm
+   - Start time: 3:35 pm
 
-    - Finish time: 3:50 pm
+   - Finish time: 3:50 pm
 
-    - Actual time needed to complete: 15 minutes
+   - Actual time needed to complete: 15 minutes
 
 ## Getting Started with Create React App
 
