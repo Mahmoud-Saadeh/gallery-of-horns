@@ -4,7 +4,7 @@ import { Button, Card } from 'react-bootstrap';
 export default class HornedBeasts extends Component {
   constructor(props) {
     super(props);
-    this.state = { votes: 0 };
+    this.state = { votes: this.props.votes ? this.props.votes : 0 };
   }
 
   voteStateHandler = () => {
@@ -12,6 +12,8 @@ export default class HornedBeasts extends Component {
       votes: this.state.votes + 1,
     });
     this.props.incVotesHandler(this.state.votes + 1, this.props.title);
+    console.log(this.state.votes);
+    console.log(this.props.votes);
   };
 
   sendDataHandler = (e) => {
@@ -51,10 +53,7 @@ export default class HornedBeasts extends Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>{this.props.description}</Card.Text>
             <Card.Text>
-              ❤️ {this.props.votes ? this.props.votes : this.state.votes}{' '}
-              {(this.props.votes ? this.props.votes : this.state.votes > 1)
-                ? 'Votes'
-                : 'Vote'}
+              ❤️ {this.state.votes} {this.state.votes > 1?'Votes':'Vote'}
             </Card.Text>
             <Button onClick={this.voteStateHandler} variant="primary">
               Vote
