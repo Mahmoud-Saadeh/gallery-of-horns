@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import SelectBeast from './components/SelectBeast';
 import Beasts from './components/BeastsData.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,6 +18,14 @@ export default class App extends Component {
       votes: 0,
     };
   }
+
+  incVotesHandler = (votes, beastName) => {
+    let arr = this.state.Beasts.map((elem) =>
+      elem.title === beastName ? { ...elem, votes: votes } : elem
+    );
+    this.setState({ Beasts: arr });
+  };
+
   getDataHandler = (src, title, description, votes) => {
     this.setState({
       src,
@@ -43,6 +52,7 @@ export default class App extends Component {
           Beasts={this.state.Beasts}
           showHandler={this.showModalHandler}
           getDataHandler={this.getDataHandler}
+          incVotesHandler={this.incVotesHandler}
         />
         <SelectBeast
           closeHandler={this.hideModalHandler}

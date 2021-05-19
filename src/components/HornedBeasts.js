@@ -11,6 +11,7 @@ export default class HornedBeasts extends Component {
     this.setState({
       votes: this.state.votes + 1,
     });
+    this.props.incVotesHandler(this.state.votes + 1, this.props.title);
   };
 
   sendDataHandler = (e) => {
@@ -41,7 +42,7 @@ export default class HornedBeasts extends Component {
           onClick={this.sendDataHandler}
           style={{
             width: '18rem',
-            margin: '0px 0px 30px 0px',
+            margin: '15px 0px 15px 0px',
             cursor: 'pointer',
           }}
         >
@@ -50,7 +51,10 @@ export default class HornedBeasts extends Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>{this.props.description}</Card.Text>
             <Card.Text>
-              ❤️ {this.state.votes} {this.state.votes > 1 ? 'Votes' : 'Vote'}
+              ❤️ {this.props.votes ? this.props.votes : this.state.votes}{' '}
+              {(this.props.votes ? this.props.votes : this.state.votes > 1)
+                ? 'Votes'
+                : 'Vote'}
             </Card.Text>
             <Button onClick={this.voteStateHandler} variant="primary">
               Vote
